@@ -1,0 +1,83 @@
+<html>
+<head>
+    <link rel="stylesheat" type="text/css" href="index.css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+    align-items: center;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  body > img {
+    margin: 0 10px;
+  }
+  
+  img {
+    max-height: 250px;
+  }
+    </style>
+
+<script>
+    var listaFilmes = ["https://br.web.img3.acsta.net/c_310_420/pictures/210/299/21029996_20130821205722213.jpg",
+    "https://br.web.img3.acsta.net/pictures/210/049/21004903_20130510170049514.jpg",
+    "https://br.web.img3.acsta.net/pictures/19/06/13/09/35/4216544.jpg",
+    "https://upload.wikimedia.org/wikipedia/pt/5/5c/Bolt-filme.jpg",
+    "https://br.web.img2.acsta.net/pictures/23/05/16/22/53/0156803.jpg"]
+
+    //Outra forma de formatar vetor
+    // listaFilmes [1] = "https://br.web.img3.acsta.net/pictures/210/049/21004903_20130510170049514.jpg"
+    // listaFilmes [2] = "https://br.web.img3.acsta.net/pictures/19/06/13/09/35/4216544.jpg"
+
+    for (var i=0; i < listaFilmes.length; i++){
+        document.write('<img src=' + listaFilmes[i] + '>');
+    }
+
+</script>
+
+
+
+
+<div class="container">
+    <h1 class="page-title">
+      Aluraflix
+    </h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+</body>
+</html>
